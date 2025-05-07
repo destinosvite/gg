@@ -25,11 +25,3 @@ document.getElementById('sorteoForm').addEventListener('submit', async (e) => {
       telefono,
       timestamp: new Date()
     });
-
-    document.getElementById('mensaje').textContent = "¡Registro exitoso!";
-    document.getElementById('sorteoForm').reset();
-  } catch (error) {
-    document.getElementById('mensaje').textContent = "Hubo un error. Intenta de nuevo.";
-    console.error(error);
-  }
-});
